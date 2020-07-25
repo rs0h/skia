@@ -76,9 +76,9 @@ size_t sk_qread(FILE*, void* buffer, size_t count, size_t offset);
 // Description of the error, if any, will be written to stderr.
 bool    sk_mkdir(const char* path);
 
-class SkOSFile {
+class SK_SPI SkOSFile {
 public:
-    class Iter {
+    class SK_SPI Iter {
     public:
         Iter();
         Iter(const char path[], const char suffix[] = nullptr);

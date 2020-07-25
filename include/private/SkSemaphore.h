@@ -14,7 +14,7 @@
 #include <algorithm>
 #include <atomic>
 
-class SkSemaphore {
+class SK_SPI SkSemaphore {
 public:
     constexpr SkSemaphore(int count = 0) : fCount(count), fOSSemaphore(nullptr) {}
 
